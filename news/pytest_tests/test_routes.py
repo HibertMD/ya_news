@@ -55,3 +55,5 @@ def test_redirect_for_comment_edit_and_delete(client, name, args):
     expected_url = f'{login_url}?next={url}'
     response = client.get(url)
     assertRedirects(response, expected_url)
+
+
